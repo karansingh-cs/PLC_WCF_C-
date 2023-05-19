@@ -6,11 +6,16 @@
         xmlns:local="clr-namespace:WpfBasics"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="31*"/>
-            <ColumnDefinition Width="129*"/>
-        </Grid.ColumnDefinitions>
-
-    </Grid>
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Apply"/>
+            <Button Grid.Column="1"  Content="Reset"/>
+            <Button Grid.Column="2" Content="Disconnect"/>
+        </Grid>
+    </StackPanel>
 </Window>
